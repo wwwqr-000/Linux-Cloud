@@ -5,3 +5,4 @@ $ unzip ngrok-install.zip
 $ ./ngrok authtoken 1v1Sq4yTIuAFrYglYGpPjaAi0WF_5BYHDQ7VV3zkTgBX1C9eJ
 $ ./ngrok tcp -region eu <port>
 $ chmod +x ./bedrock_server
+$ ./bedrock_server
