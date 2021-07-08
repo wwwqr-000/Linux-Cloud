@@ -1,6 +1,6 @@
 $ mkdir <name>
 $ cd <name>
-$ wget <https://anonfiles.com/72Gcla57uc/bedrock-server_linux_zip>
+$ wget <https://anonfiles.com/72Gcla57uc/bedrock-server_linux_zip> (copy url adress as: bedrock-server-linux-.zip
 $ unzip bedrock-server(linux).zip
 $ chmod +x ./playit
 $ chmod +x ./bedrock_server
