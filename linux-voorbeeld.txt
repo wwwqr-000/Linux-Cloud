@@ -1,0 +1,7 @@
+$ unzip ngrok.zip
+$ java -Xmx1G -Xms1G -jar forge.jar nogui
+$ find test -type f -delete && rm -r test
+
+-root acces-
+$ sudo passwd
+$ su
