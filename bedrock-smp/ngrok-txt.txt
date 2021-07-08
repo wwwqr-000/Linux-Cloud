@@ -1,6 +1,8 @@
-$ wget <https://www.minecraft.net/en-us/download/server/bedrock>
-$ unzip <zip name minecraft download>
+$ mkdir <name>
+$ cd <name>
+$ wget <https://anonfiles.com/72Gcla57uc/bedrock-server_linux_zip>
+$ unzip bedrock-server(linux).zip
 $ chmod +x ./playit
-$ ./playit
 $ chmod +x ./bedrock_server
+$ ./playit
 $ ./bedrock_server
