@@ -1,8 +1,6 @@
-$ wget <minecraft direct download link>
+$ wget <https://www.minecraft.net/en-us/download/server/bedrock>
 $ unzip <zip name minecraft download>
-$ wget https://github.com/wwwqr-000/Linux-Cloud/raw/main/bedrock-smp/ngrok-install.zip
-$ unzip ngrok-install.zip
-$ ./ngrok authtoken 1v1Sq4yTIuAFrYglYGpPjaAi0WF_5BYHDQ7VV3zkTgBX1C9eJ
-$ ./ngrok tcp -region eu <port>
+$ chmod +x ./playit
+$ ./playit
 $ chmod +x ./bedrock_server
 $ ./bedrock_server
