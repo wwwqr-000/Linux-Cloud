@@ -4,4 +4,5 @@ $ wget <https://anonfiles.com/pc38v459ua/tech-time_zip> (copy url adress as: "te
 $ unzip tech-time.zip
 $ chmod +x ./playit
 $ ./playit
+$ sudo apt install default-jre
 $ java -Xmx4G -Xms1G -jar forge.jar nogui
