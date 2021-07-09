@@ -1,6 +1,6 @@
 $ mkdir <name>
 $ cd <name>
-$ wget <https://anonfiles.com/7116we5au5/tech-time_zip>
+$ wget <https://anonfiles.com/rbM7wd54u6/tech-time_zip>
 $ unzip tech-time.zip
 $ chmod +x ./playit
 $ ./playit
