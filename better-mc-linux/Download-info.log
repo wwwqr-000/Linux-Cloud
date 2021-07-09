@@ -1,0 +1,10 @@
+$ mkdir <name>
+$ cd <name>
+$ wget <https://anonfiles.com/Pcxfy259ub/better-mc-linux_1.16.5_zip>
+$ unzip better-mc-linux_1.16.5.zip
+$ wget https://playit.gg/downloads/playit-linux_64-0.4.4
+$ mv playit-linux_64-0.4.4 playit
+$ chmod +x ./playit
+$ ./playit
+$ sudo apt install default-jre
+$ java -Xmx8G -Xms8G -jar forge.jar nogui
