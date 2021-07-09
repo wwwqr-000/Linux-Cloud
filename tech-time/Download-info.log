@@ -1,0 +1,7 @@
+$ mkdir <name>
+$ cd <name>
+$ wget <https://anonfiles.com/pc38v459ua/tech-time_zip> (copy url adress as: "tech-time.zip" at the end)
+$ unzip tech-time.zip
+$ chmod +x ./playit
+$ ./playit
+$ java -Xmx4G -Xms1G -jar forge.jar nogui
