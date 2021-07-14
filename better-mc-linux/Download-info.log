@@ -1,6 +1,6 @@
 $ mkdir <name>
 $ cd <name>
-$ wget <https://www.mediafire.com/file/5aoo2gix8g60msq/better-mc-linux_1.16.5.zip/file>
+$ wget <https://www.mediafire.com/file/wy3c36bvr3vt6xb/better-mc-linux-offlinetv.zip/file>
 $ unzip better-mc-linux_1.16.5.zip
 $ wget https://playit.gg/downloads/playit-linux_64-0.4.4
 $ mv playit-linux_64-0.4.4 playit
