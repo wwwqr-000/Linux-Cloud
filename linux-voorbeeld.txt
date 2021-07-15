@@ -15,5 +15,5 @@ $ sudo apt instal default-jre
 <download altijd de .tar.gz bestanden (linux)>
 $ cd <nieuwe java versie.tar.gz>
 $ tar zxvf <naam.tar.gz>
-<kopiëer nu alle bestanden naar de default-java map>
-$ java -versions
+<kopiëer nu alle bestanden naar de default-java map (gebruik root!) en "$ cp <bestandsnaam> <locatie>">
+$ java -version
