@@ -7,6 +7,7 @@ $ sudo passwd
 $ su
 
 -install different java version-
+$ sudo apt instal default-jre
 <open map /usr/lib/jvm/ >
 <delete alles uit map default-java>
 <ga naar https://www.azul.com/downloads/?package=jdk#download-openjdk voor java versies>
