@@ -7,4 +7,4 @@ $ mv playit-linux_64-0.4.4 playit
 $ chmod +x ./playit
 $ ./playit
 $ sudo apt install default-jre
-$ java -Xmx8G -Xms8G -jar forge.jar nogui
+$ java -Xmx7G -Xms7G -jar forge.jar nogui
