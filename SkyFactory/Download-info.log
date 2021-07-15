@@ -1,0 +1,10 @@
+$ mkdir <name>
+$ cd <name>
+$ wget <https://www.mediafire.com/file/khs27le2oqithfk/SkyFactory-server.zip/file>
+$ unzip SkyFactory-server.zip
+$ wget https://playit.gg/downloads/playit-linux_64-0.4.4
+$ mv playit-linux_64-0.4.4 playit
+$ chmod +x ./playit
+$ ./playit
+$ sudo apt install default-jre
+$ java -Xmx7G -Xms7G -jar forge.jar nogui (if u have 8 GB ram. Use 7 GB for server)
