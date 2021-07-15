@@ -5,3 +5,14 @@ $ find test -type f -delete && rm -r test
 -root acces-
 $ sudo passwd
 $ su
+
+-install different java version-
+<open map /usr/lib/jvm/ >
+<delete alles uit map default-java>
+<ga naar https://www.azul.com/downloads/?package=jdk#download-openjdk voor java versies>
+<of ga naar https://java.com/en/download/linux_manual.jsp (1.8.0_291 {8u291} is voor 1.16.5 en 1.12.2)>
+<download altijd de .tar.gz bestanden (linux)>
+$ cd <nieuwe java versie.tar.gz>
+$ tar zxvf <naam.tar.gz>
+<kopiëer nu alle bestanden naar de default-java map>
+$ java -versions
