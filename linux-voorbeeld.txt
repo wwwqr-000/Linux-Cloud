@@ -4,7 +4,7 @@ $ find test -type f -delete && rm -r test
 
 -root acces-
 $ sudo passwd
-$ su
+$ su -
 
 -install different java version-
 $ sudo apt instal default-jre
