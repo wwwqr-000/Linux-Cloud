@@ -1,0 +1,10 @@
+$ mkdir <name>
+$ cd <name>
+$ wget <https://www.mediafire.com/file/2si6bh81yi3d9ix/spigot-server-win%2526linux.zip/file>
+$ unzip spigot-server-win&linux.zip
+$ wget https://playit.gg/downloads/playit-linux_64-0.4.4
+$ mv playit-linux_64-0.4.4 playit
+$ chmod +x ./playit
+$ ./playit
+$ sudo apt install default-jdk screen nano wget git
+$ java -Xmx7G -Xms7G -jar forge.jar nogui (use 40% of your total ram)
