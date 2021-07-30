@@ -7,4 +7,4 @@ $ mv playit-linux_64-0.4.4 playit
 $ chmod +x ./playit
 $ ./playit
 $ sudo apt install default-jdk screen nano wget git
-$ java -Xmx7G -Xms7G -jar forge.jar nogui (use 40% of your total ram)
+$ java -Xms512M -Xmx4G -jar linux.jar nogui (use 40% of your total ram)
