@@ -1,0 +1,62 @@
+:: iets unzippen in cmd
+
+powershell -command "Expand-Archive -Force 'test.zip' 'test'"
+
+:: iets downloaden via cmd
+
+powershell -command "Invoke-WebRequest -Uri 'https://test.txt' -OutFile test.txt"
+
+:: iets locken maar het is er toch nog
+
+attrib +h +s
+
+:: onzichtbare startup van een .cmd bestand
+
+Set WshShell = CreateObject("WScript.Shell") 
+WshShell.Run chr(34) & "C:\Batch Files\syncfiles.bat" & Chr(34), 0
+Set WshShell = Nothing
+
+:: Extreme delete
+
+del /A:H
+
+:: Line detect
+
+findstr /m "test" test.txt >Nul
+if %errorlevel%==0 (
+start test.txt
+)
+
+if %errorlevel%==1 (
+exit
+)
+
+::set a file to a variable
+
+set str=^&Type test.txt
+echo %str%
+
+::VBS voorbeeld
+
+x=msgbox("Your Text Here" ,0, "Your Title Here")
+
+Make sure that the " is included in the text and replace the Your Text Here and Your Title Here. But don't change anything elese!
+
+Advanced users can change something else.
+0 =OK button only
+1 =OK and Cancel buttons
+2 =Abort, Retry, and Ignore buttons
+3 =Yes, No, and Cancel buttons
+4 =Yes and No buttons
+5 =Retry and Cancel buttons
+16 =Critical Message icon
+32 =Warning Query icon
+48 = Warning Message icon
+64 =Information Message icon
+0 = First button is default
+256 =Second button is default
+512 =Third button is default
+768 =Fourth button is default
+0 =Application modal (the current application will not work until the user responds to the message box)
+4096 =System modal (all applications wont work until the user responds to the message box)
+Change the "0" with any of these numbers above.
