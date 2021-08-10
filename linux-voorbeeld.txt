@@ -5,6 +5,11 @@ $ find test -type f -delete && rm -r test
 -root acces-
 $ sudo passwd
 $ sudo -s
+$ su -i
+$ sudo -
+
+-wget acces-
+wget <url> --no-check-certificate
 
 -install different java version-
 $ sudo apt install default-jdk screen nano wget git
