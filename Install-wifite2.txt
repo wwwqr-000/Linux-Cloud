@@ -1,0 +1,19 @@
+(use root) <sudo -s>
+
+apt install zip
+apt install python
+apt install aircrack-ng
+apt install reaver
+apt install bully
+apt install tshark
+apt install hashcat
+apt install hcxdumptool
+apt install hcxpcaptool
+apt install macchanger
+mkdir <name>
+cd <name>
+wget <https://anonfiles.com/x0o848B2u6/wifite2_zip> --no-check-certificate
+unzip wifite2.zip
+rm wifite2.zip
+chmod +x Wifite.py
+./Wifite.py
