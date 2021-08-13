@@ -1,4 +1,4 @@
-$ wget <https://www.mediafire.com/file/oimfa48ea5y4eda/tech-pack-1.16.5.zip/file>
+$ wget <https://www.mediafire.com/file/b7uhu9jvgi8bqm1/tech-pack.zip/file>
 $ unzip tech-pack.zip
 $ rm tech-pack.zip
 $ cd tech-pack
