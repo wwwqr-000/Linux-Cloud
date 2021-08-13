@@ -1,6 +1,6 @@
 $ wget <https://www.mediafire.com/file/oimfa48ea5y4eda/tech-pack-1.16.5.zip/file>
-$ unzip tech-pack-1.16.5.zip
-$ rm tech-pack-1.16.5.zip
+$ unzip tech-pack.zip
+$ rm tech-pack.zip
 $ cd tech-pack
 $ wget https://github.com/wwwqr-000/Linux-Cloud/raw/main/playit.gg/playit-linux_64-0.4.4
 $ mv playit-linux_64-0.4.4 playit
