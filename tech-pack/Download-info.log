@@ -1,10 +1,10 @@
-$ wget <https://www.mediafire.com/file/z3jtny9boln3mtl/tech-pack.zip/file>
-$ unzip tech-pack.zip
-$ rm tech-pack.zip
-$ cd tech-pack
-$ wget https://github.com/wwwqr-000/Linux-Cloud/raw/main/playit.gg/playit-linux_64-0.4.4
-$ mv playit-linux_64-0.4.4 playit
-$ chmod +x ./playit
-$ ./playit
-$ sudo apt install default-jdk screen nano wget git
-$ java -Xmx4G -Xms1G -jar forge.jar nogui
+wget <https://www.mediafire.com/file/z3jtny9boln3mtl/tech-pack.zip/file>
+unzip tech-pack.zip
+rm tech-pack.zip
+cd tech-pack
+wget https://github.com/wwwqr-000/Linux-Cloud/raw/main/playit.gg/playit-linux_64-0.4.4
+mv playit-linux_64-0.4.4 playit
+chmod +x ./playit
+./playit
+sudo apt install default-jdk screen nano wget git
+java -Xmx4G -Xms1G -jar forge.jar nogui
