@@ -1,0 +1,9 @@
+cat /etc/nsswitch.conf
+sudo nano /etc/hosts  (maak een nieuwe host aan)
+sudo apt-get install apache2
+sudo a2enmod ssl
+sudo a2ensite default-ssl.conf
+sudo service apache2 restart
+#gebruik ngrok!
+#om opnieuw te starten doe: sudo service apache2 restart
+#html locatie = /var/www/html/
