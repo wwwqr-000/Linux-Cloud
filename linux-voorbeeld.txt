@@ -12,7 +12,7 @@ $ sudo -
 wget <url> --no-check-certificate
 
 -install different java version-
-$ sudo apt install default-jdk screen nano wget git
+# sudo apt install default-jdk screen nano wget git
 <open map /usr/lib/jvm/ >
 <delete alles uit map default-java>
 <ga naar https://www.azul.com/downloads/?package=jdk#download-openjdk voor java versies>
