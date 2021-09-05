@@ -1,10 +1,10 @@
-$ mkdir <name>
-$ cd <name>
-$ wget <https://anonfiles.com/d0m55651ue/tech-time_zip>
-$ unzip tech-time.zip
-$ wget https://playit.gg/downloads/playit-linux_64-0.4.4
-$ mv playit-linux_64-0.4.4 playit
-$ chmod +x ./playit
-$ ./playit
-$ sudo apt install default-jre
-$ java -Xmx7G -Xms7G -jar forge.jar nogui (if u have 8 GB ram. Use 7 GB for server)
+mkdir <name>
+cd <name>
+wget <https://anonfiles.com/d0m55651ue/tech-time_zip>
+unzip tech-time.zip
+wget https://playit.gg/downloads/playit-linux_64-0.4.4
+mv playit-linux_64-0.4.4 playit
+chmod +x ./playit
+./playit
+sudo apt install default-jre
+java -Xmx7G -Xms7G -jar forge.jar nogui (if u have 8 GB ram. Use 7 GB for server)
