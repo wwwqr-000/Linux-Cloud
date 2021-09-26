@@ -1,5 +1,5 @@
 cat /etc/nsswitch.conf
-sudo nano /etc/hosts  (maak een nieuwe host aan)
+sudo nano /etc/hosts  #maak een nieuwe host aan
 sudo apt-get install apache2
 sudo a2enmod ssl
 sudo a2ensite default-ssl.conf
