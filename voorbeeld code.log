@@ -60,3 +60,6 @@ Advanced users can change something else.
 0 =Application modal (the current application will not work until the user responds to the message box)
 4096 =System modal (all applications wont work until the user responds to the message box)
 Change the "0" with any of these numbers above.
+
+forge files together:
+cmd> copy /b "filename" + "filename"
