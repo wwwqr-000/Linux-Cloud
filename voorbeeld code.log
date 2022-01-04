@@ -61,5 +61,14 @@ Advanced users can change something else.
 4096 =System modal (all applications wont work until the user responds to the message box)
 Change the "0" with any of these numbers above.
 
+dim result
+result = msgbox("Please select  Yes or No", 4 , "Select yes or no")
+
+If result=6 then
+msgbox "Yes selected"
+else
+msgbox "No selected"
+end if
+
 forge files together:
 cmd> copy /b "filename" + "filename"
