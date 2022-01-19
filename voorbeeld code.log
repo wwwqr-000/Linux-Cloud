@@ -38,6 +38,9 @@ echo %str%
 
 ::VBS voorbeeld
 
+Set oShell = WScript.CreateObject("WScript.Shell")
+oShell.run "cmd /c start htps://example.com"
+
 x=msgbox("Your Text Here" ,0, "Your Title Here")
 
 Make sure that the " is included in the text and replace the Your Text Here and Your Title Here. But don't change anything elese!
