@@ -86,3 +86,4 @@ end if
 
 forge files together:
 cmd> copy /b "filename" + "filename"
+for %i in (java.exe) do @echo.   %~$PATH:i
