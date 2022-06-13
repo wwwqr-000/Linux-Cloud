@@ -1,0 +1,76 @@
+#installing software
+apt-get update
+apt-get install nginx
+apt-get install ntpdate tor
+service tor stop
+#Configuring Hosting
+mkdir -p /usr/share/nginx/onions/myonion
+echo "Hello World" > /usr/share/nginx/onions/myonion/index.html
+chown -R debian-tor:debian-tor /usr/share/nginx/onions/myonion
+#We need to adjust the port that NGinx listens on, and configure it with the correct document root
+nano /etc/nginx/sites-available/default
+
+# Remove the existing config and replace with
+server{
+        listen 127.0.0.1:9070;
+        root /usr/share/nginx/onions/myonion;
+        index index.html index.html;
+
+        server_name foo.bar; # We'll amend this later
+
+        location / {
+                autoindex on;
+        }
+
+}
+
+# Save and exit (Ctrl-X, Y)
+
+nano /etc/nginx/nginx.conf
+
+# Locate the http block and add
+
+server_tokens off;
+
+# Save and exit
+#Once NGinx has been started, you should be able to test the site using wget
+service nginx start
+wget --header="Host: foo.bar" http://127.0.0.1:9070/
+#Configure TOR
+cd /etc/tor
+mv torrc torrc-default
+nano torrc
+
+# Insert the following
+SocksPort 0 # what port to open for local application connections
+SocksListenAddress 127.0.0.1 # accept connections only from localhost
+
+RunAsDaemon 1
+DataDirectory /var/lib/tor
+
+
+HiddenServiceDir /var/lib/tor/myonion/
+HiddenServicePort 80 127.0.0.1:9070
+#If we now start TOR, the directory /var/lib/tor/myonion should be created, and two files created within it (including one defining the hostname)
+service tor start
+cat /var/lib/tor/myonion/hostname
+#Making it all start at boot
+update-rc.d nginx defaults
+update-rc.d tor defaults
+#Basic Op-Sec Precautions
+apt-get install fail2ban
+cat << EOM > /etc/fail2ban/jail.local
+[ssh]
+enabled = true
+maxretry = 3
+banaction = iptables-allports
+[ssh-ddos]
+enabled = true
+maxretry = 3
+EOM
+
+service fail2ban restart
+update-rc.d fail2ban defaults
+#Disable BASH History
+echo 'alias exit="kill -9 $$"' >> /etc/profile
+source /etc/profile
