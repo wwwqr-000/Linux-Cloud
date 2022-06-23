@@ -1,0 +1,8 @@
+
+sudo apt-get update
+sudo apt-get install epel-release
+sudo apt-get install sslh
+nano /etc/default/sslh (Change the RUN= parameter to “yes”:)
+DAEMON_OPTS="--user sslh --listen 0.0.0.0:25565 --anyprot your_ip_address:25565 --pidfile /var/run/sslh/sslh.pid
+sudo systemctl enable sslh
+sudo systemctl start sslh
