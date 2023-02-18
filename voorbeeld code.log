@@ -4,7 +4,7 @@ powershell -command "Expand-Archive -Force 'test.zip' 'test'"
 
 :: iets downloaden via cmd
 
-powershell -command "Invoke-WebRequest -Uri 'https://test.txt' -OutFile test.txt"
+curl.exe --output ip.txt --url http://ipinfo.io/ip
 
 :: iets locken maar het is er toch nog
 
