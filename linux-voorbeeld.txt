@@ -28,3 +28,17 @@ $ curl -X POST https://textbelt.com/text \
        --data-urlencode phone='5555555555' \
        --data-urlencode message='Hello world' \
        -d key=textbelt
+----------- http --> https (ssl cert)
+sudo apt update
+sudo apt install snapd
+sudo snap install core; sudo snap refresh core
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+sudo certbot --apache
+sudo certbot certonly --apache
+
+The command to renew certbot is installed in one of the following locations:
+
+/etc/crontab/
+/etc/cron.*/*
+systemctl list-timers
